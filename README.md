@@ -1,4 +1,5 @@
 ## shelter. week-1 - Фиксированная вёрстка
+[deploy shelter](https://lelik7777.github.io/shelter-rs/shelter/index.html)
 
 - [Описание и требования задания](shelter.md)
 
