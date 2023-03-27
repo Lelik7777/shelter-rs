@@ -1,0 +1,29 @@
+.about {
+  background-color: $color-light;
+}
+
+.about__wrapper {
+  padding: 80px 0 100px 0;
+  display: flex;
+}
+
+.about__content {
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+
+.about__img {
+  margin: 0 120px 0 215px;
+}
+
+.about__title {
+  margin: 14px 0 0 0;
+  color: $color-dark-1;
+  max-width: 370px;
+}
+
+.about__text {
+  max-width: 430px;
+  color: $color-dark-xl;
+}

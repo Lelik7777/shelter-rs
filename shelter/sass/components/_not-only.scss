@@ -1,0 +1,20 @@
+.not-only__wrapper {
+  display: flex;
+}
+
+.not-only__content {
+  display: flex;
+  flex-flow: column;
+}
+
+.content__title {
+  margin: 163px 0 43px;
+  max-width: 310px;
+  color: $color-light;
+}
+
+.not-only__text {
+  max-width: 460px;
+  margin: 0 42px 42px 0;
+  color: $color-dark-s;
+}

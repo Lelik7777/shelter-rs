@@ -347,3 +347,12 @@ template {
 [hidden] {
   display: none;
 }
+
+/*my custom properties*/
+* {
+  box-sizing: border-box;
+}
+
+section, main, footer, header, article {
+  display: block;
+}

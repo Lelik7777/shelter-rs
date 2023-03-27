@@ -1,0 +1,23 @@
+.help {
+  background-color: $color-light;
+}
+
+.help__wrapper {
+  padding: 80px 0 100px 0;
+  display: flex;
+  flex-flow: column;
+  gap: 60px;
+}
+
+.help__title {
+  text-align: center;
+}
+
+.help__icons {
+  display: flex;
+  justify-content: center;
+  gap: 57px 120px;
+  flex-flow: wrap;
+
+}
+
