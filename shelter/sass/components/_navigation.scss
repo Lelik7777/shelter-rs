@@ -6,16 +6,9 @@
   gap: 35px;
 }
 
-//.navigation__item.active {
-//  color: $color-light-s;
-//  text-decoration: underline;
-//  text-decoration-thickness: 3px;
-//  text-decoration-color: $color-primary;
-//
-//}
-
 .navigation__item {
   position: relative;
+
   &.active {
     &:after {
       content: '';

@@ -31,6 +31,7 @@ h4 {
   @extend %font-f-primary;
   @include font(2.0rem, 2.3rem);
   margin: 0;
+  letter-spacing: 0.06em;
 }
 
 p, a {

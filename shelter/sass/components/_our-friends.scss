@@ -24,19 +24,23 @@
 .slider__cards {
   gap: 90px;
 }
-.card{
+
+.card {
   display: flex;
   flex-flow: column;
   align-items: center;
   gap: 30px;
   @extend %transition;
-  &:hover{
+
+  &:hover {
     cursor: pointer;
-    button{
+
+    button {
       background-color: $color-primary-light;
     }
   }
 }
-.card__button{
+
+.card__button {
   margin-bottom: 30px;
 }
