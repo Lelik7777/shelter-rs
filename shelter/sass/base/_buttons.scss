@@ -1,0 +1,20 @@
+$border: 2px;
+.button {
+  padding: 13px 43px;
+  border-radius: 100px;
+  @include font(1.7rem, 2.21rem);
+  letter-spacing: 0.06em;
+  @extend %font-f-primary;
+  @extend %transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  &_color {
+    color: $color-dark-3xl;
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+  }
+}

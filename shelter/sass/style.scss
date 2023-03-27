@@ -6,12 +6,14 @@
 
 
 @import "base/base";
+@import "base/buttons";
 
 @import "layout/header-main";
 @import "layout/wrapper";
 @import "layout/header";
 
 @import "components/navigation";
+@import "components/not-only";
 
 @import "pages/main";
 @import "pages/pets";
