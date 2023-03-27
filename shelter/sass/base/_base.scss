@@ -23,6 +23,7 @@ h2 {
 h3 {
   @extend %font-f-primary;
   @include font(3.5rem, 4.5rem);
+letter-spacing: 0.06em;
 }
 
 h4 {

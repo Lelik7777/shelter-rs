@@ -7,14 +7,19 @@ $border: 2px;
   @extend %font-f-primary;
   @extend %transition;
   cursor: pointer;
+  color: $color-dark-3xl;
 
   &:hover {
     background-color: $color-primary-light;
   }
 
   &_color {
-    color: $color-dark-3xl;
     background-color: $color-primary;
     border: 2px solid $color-primary;
+  }
+
+  &_border {
+    border: 2px solid $color-primary;
+    background-color: $color-light;
   }
 }

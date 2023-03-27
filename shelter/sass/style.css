@@ -357,6 +357,7 @@ h3 {
   line-height: 4.5rem;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.06em;
 }
 
 h4 {
@@ -392,14 +393,18 @@ a {
   font-style: normal;
   letter-spacing: 0.06em;
   cursor: pointer;
+  color: #292929;
 }
 .button:hover {
   background-color: #FDDCC4;
 }
 .button_color {
-  color: #292929;
   background-color: #F1CDB3;
   border: 2px solid #F1CDB3;
+}
+.button_border {
+  border: 2px solid #F1CDB3;
+  background-color: #FFFFFF;
 }
 
 .header-main {
@@ -481,6 +486,36 @@ a {
   max-width: 460px;
   margin: 0 42px 42px 0;
   color: #CDCDCD;
+}
+
+.about {
+  background-color: #FFFFFF;
+}
+
+.about__wrapper {
+  padding: 80px 0 100px 0;
+  display: flex;
+}
+
+.about__content {
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+
+.about__img {
+  margin: 0 120px 0 215px;
+}
+
+.about__title {
+  margin: 14px 0 0 0;
+  color: #545454;
+  max-width: 370px;
+}
+
+.about__text {
+  max-width: 430px;
+  color: #4C4C4C;
 }
 
 .main .header__logo {
