@@ -1,0 +1,42 @@
+.our-friends {
+  background-color: $color-light-1;
+}
+
+.our-friends__wrapper {
+  padding: 80px 0 100px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.our-friends__title {
+  text-align: center;
+  color: $color-dark-1;
+}
+
+.our-friends__slider {
+  display: flex;
+  gap: 53px;
+  align-items: center;
+}
+
+.slider__cards {
+  gap: 90px;
+}
+.card{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 30px;
+  @extend %transition;
+  &:hover{
+    cursor: pointer;
+    button{
+      background-color: $color-primary-light;
+    }
+  }
+}
+.card__button{
+  margin-bottom: 30px;
+}

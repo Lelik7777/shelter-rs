@@ -4,3 +4,9 @@
   font-weight: $weight;
   font-style: $style;
 }
+@mixin column($width){
+  display: flex;
+  >*{
+    flex-basis: $width;
+  }
+}

@@ -1,0 +1,35 @@
+.icon {
+  cursor: pointer;
+  display: inline-block;
+
+  &_round {
+    border-radius: 100px;
+    border: 2px solid $color-primary;
+    //padding: 23px 19px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %transition;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+}
+
+
+.arrow_left {
+  background-image: url("../../../shelter/assets/icons/arrow-left.svg");
+  width: 14px;
+  height: 6px;
+
+}
+
+.arrow_right {
+  background-image: url("../../../shelter/assets/icons/arrow-right.svg");
+  width: 14px;
+  height: 6px;
+}
