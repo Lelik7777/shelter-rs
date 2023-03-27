@@ -1,0 +1,8 @@
+.pets {
+         .navigation__item {
+    color: $color-dark-1;
+    &:hover {
+      color: $color-dark-3xl;
+    }
+  }
+}

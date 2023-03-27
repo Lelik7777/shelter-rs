@@ -1,0 +1,26 @@
+.header {
+  padding: 30px 0 90px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  flex-flow: column;
+  cursor: pointer;
+}
+
+.logo__title {
+  margin: 0 0 10px;
+}
+
+.logo__subtitle {
+  @extend %font-f-secondary;
+  @include font(1.3rem, 1.495rem);
+  letter-spacing: 0.1em;
+  padding: 0 0 0 4px;
+}
