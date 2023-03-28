@@ -1,4 +1,8 @@
 .main {
+  //for header
+  &.header {
+    padding: 30px 0 90px;
+  }
   .header__logo {
     color: $color-primary;
   }
@@ -16,5 +20,16 @@
     }
 
   }
+//for section our-friends
+  &.our-friends__wrapper {
+    gap: 60px;
+  }
+  &.our-friends__slider {
+    gap: 53px;
 
+  }
+
+  &.slider__cards {
+    gap: 90px;
+  }
 }

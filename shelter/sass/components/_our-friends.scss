@@ -7,7 +7,6 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 60px;
 }
 
 .our-friends__title {
@@ -17,13 +16,10 @@
 
 .our-friends__slider {
   display: flex;
-  gap: 53px;
   align-items: center;
 }
 
-.slider__cards {
-  gap: 90px;
-}
+
 
 .card {
   display: flex;
