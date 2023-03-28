@@ -19,7 +19,7 @@
 
 }
 
-
+//webstorm throw errors but this is right way
 .arrow_left {
   background-image: url("../assets/icons/arrow-left.svg");
   width: 14px;
@@ -34,10 +34,10 @@
 }
 
 .help__icon {
-  display: flex;
+  display: inline-flex;
   flex-flow: column;
-  justify-content: space-between;
   align-items: center;
+  max-width: max-content;
   gap: 30px;
 }
 
@@ -46,6 +46,7 @@
   height: 60px;
 }
 
+//webstorm throw errors but this is right way
 .icon_food {
   background-image: url("../assets/icons/icon-pet-food.svg");
 }
@@ -72,7 +73,7 @@
 }
 
 .icon_medicines {
-  background-image: url("../assets/icons/icon-vitamins.svg");
+  background-image: url("../assets/icons/icon-medicines.svg");
 }
 
 .icon_collars {
