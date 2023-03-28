@@ -324,7 +324,7 @@ section, main, footer, header, article {
   font-family: Arial, sans-serif;
 }
 
-.pets .navigation__item, .main .navigation__item, .card, .icon_round, .button {
+.pets .navigation__item, .main .navigation__item, .credit-card, .card, .footer__info, .icon_round, .button {
   transition: all 0.4s ease-out;
 }
 
@@ -611,6 +611,10 @@ a {
   display: flex;
   gap: 20px;
   align-items: center;
+  color: #F1CDB3;
+}
+.footer__info:hover {
+  color: #FDDCC4;
 }
 
 .navigation {
@@ -785,6 +789,10 @@ a {
   display: flex;
   gap: 15px;
   max-width: 350px;
+  cursor: pointer;
+}
+.credit-card:hover {
+  background-color: #FDDCC4;
 }
 
 .in-addition__text {

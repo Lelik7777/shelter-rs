@@ -31,4 +31,11 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  color: $color-primary;
+  @extend %transition;
+
+  &:hover {
+    color: $color-primary-light;
+  }
 }
+
