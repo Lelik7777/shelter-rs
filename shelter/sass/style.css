@@ -440,10 +440,10 @@ a {
 }
 
 .help__icon {
-  display: flex;
+  display: inline-flex;
   flex-flow: column;
-  justify-content: space-between;
   align-items: center;
+  max-width: max-content;
   gap: 30px;
 }
 
@@ -477,7 +477,7 @@ a {
 }
 
 .icon_medicines {
-  background-image: url("../assets/icons/icon-vitamins.svg");
+  background-image: url("../assets/icons/icon-medicines.svg");
 }
 
 .icon_collars {
@@ -532,6 +532,13 @@ a {
 }
 .layout-3-column > * {
   flex-basis: 25%;
+}
+
+.layout-5-column {
+  display: flex;
+}
+.layout-5-column > * {
+  flex-basis: 16%;
 }
 
 .navigation {
@@ -659,6 +666,7 @@ a {
   display: flex;
   flex-flow: column;
   gap: 60px;
+  color: #545454;
 }
 
 .help__title {
@@ -666,10 +674,10 @@ a {
 }
 
 .help__icons {
-  display: flex;
-  justify-content: center;
-  gap: 57px 120px;
   flex-flow: wrap;
+  justify-content: center;
+  gap: 55px 120px;
+  padding: 0 87px;
 }
 
 .main .header__logo {

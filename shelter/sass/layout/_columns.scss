@@ -2,3 +2,6 @@
   @include column(25%);
 }
 
+.layout-5-column {
+  @include column(16%);
+}
