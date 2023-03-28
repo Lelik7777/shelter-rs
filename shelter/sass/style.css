@@ -453,39 +453,39 @@ a {
 }
 
 .icon_food {
-  background-image: url("../../../shelter/assets/icons/icon-pet-food.svg");
+  background-image: url("/shelter/assets/icons/icon-pet-food.svg");
 }
 
 .icon_transport {
-  background-image: url("../../../shelter/assets/icons/icon-transportation.svg");
+  background-image: url("/shelter/assets/icons/icon-transportation.svg");
 }
 
 .icon_toys {
-  background-image: url("../../../shelter/assets/icons/icon-toys.svg");
+  background-image: url("/shelter/assets/icons/icon-toys.svg");
 }
 
 .icon_bowls {
-  background-image: url("../../../shelter/assets/icons/icon-bowls-and-cups.svg");
+  background-image: url("/shelter/assets/icons/icon-bowls-and-cups.svg");
 }
 
 .icon_shampoo {
-  background-image: url("../../../shelter/assets/icons/icon-shampoos.svg");
+  background-image: url("/shelter/assets/icons/icon-shampoos.svg");
 }
 
 .icon_vitamins {
-  background-image: url("../../../shelter/assets/icons/icon-vitamins.svg");
+  background-image: url("/shelter/assets/icons/icon-vitamins.svg");
 }
 
 .icon_medicines {
-  background-image: url("../../../shelter/assets/icons/icon-vitamins.svg");
+  background-image: url("/shelter/assets/icons/icon-vitamins.svg");
 }
 
 .icon_collars {
-  background-image: url("../../../shelter/assets/icons/icon-collars-leashes.svg");
+  background-image: url("/shelter/assets/icons/icon-collars-leashes.svg");
 }
 
 .icon_sleep {
-  background-image: url("../../../shelter/assets/icons/icon-sleeping-area.svg");
+  background-image: url("/shelter/assets/icons/icon-sleeping-area.svg");
 }
 
 .header-main {
