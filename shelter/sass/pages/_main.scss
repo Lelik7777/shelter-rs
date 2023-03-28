@@ -9,6 +9,7 @@
 
   .navigation__item {
     color: $color-dark-s;
+    @extend %transition;
 
     &:hover {
       color: $color-light-s;

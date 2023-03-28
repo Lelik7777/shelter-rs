@@ -1,0 +1,40 @@
+.in-addition {
+  background-color: $color-light-1;
+}
+
+.in-addition__wrapper {
+  padding: 80px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  img {
+    max-height: 261px;
+  }
+
+}
+
+.in-addition__content {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  max-width: 380px;
+  color: $color-dark-1;
+}
+
+.in-addition__title {
+  max-width: 300px;
+}
+
+.credit-card {
+  background-color: $color-primary;
+  padding: 10px 15px;
+  border-radius: 9px;
+  display: flex;
+  gap: 15px;
+  max-width: 350px;
+}
+
+.in-addition__text {
+  @include font(12px, 18px, $style: italic);
+}
