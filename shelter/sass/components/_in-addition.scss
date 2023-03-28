@@ -33,6 +33,12 @@
   display: flex;
   gap: 15px;
   max-width: 350px;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
 }
 
 .in-addition__text {
