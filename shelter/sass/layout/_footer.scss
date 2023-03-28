@@ -1,0 +1,34 @@
+.footer {
+  background: radial-gradient(100% 215.42% at 0% 0%, $bg-color-footer-1 0%, $bg-color-footer-2 100%);
+  padding: 40px 0 0 0;
+}
+
+.footer__wrapper {
+  padding: 0 40px;
+  gap: 160px;
+}
+
+.footer__contacts {
+  max-width: 279px;
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+
+.footer__location {
+  display: flex;
+  flex-flow: column;
+  gap: 33px;
+}
+
+.footer__title {
+  color: $color-light;
+  margin: 16px 0 0 0;
+}
+
+.footer__info {
+  max-width: max-content;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
