@@ -1,4 +1,14 @@
+
 .pets {
+  //for header
+  &.header {
+    padding: 30px 0;
+  }
+
+  .header__logo {
+    color: $color-dark-1;
+  }
+
   .navigation__item {
     color: $color-dark-1;
     @extend %transition;
@@ -7,4 +17,22 @@
       color: $color-dark-3xl;
     }
   }
+
+  //for section our-friends
+  &.our-friends__wrapper {
+    gap: 45px;
+  }
+
+  &.our-friends__slider {
+    gap: 40px;
+  }
+  &.slider__cards{
+    flex-flow: wrap;
+    padding: 0 40px;
+    gap: 30px 40px;
+  }
+}
+
+.slider__navigation{
+  display: flex;
 }
