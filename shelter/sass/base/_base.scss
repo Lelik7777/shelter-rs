@@ -39,10 +39,11 @@ h5{
   margin: 0;
   letter-spacing: 0.06em;
 }
-p, a {
+p {
   @extend %font-f-secondary;
   @include font();
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -52,4 +53,5 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+  margin: 0;
 }

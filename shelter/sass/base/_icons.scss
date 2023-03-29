@@ -4,7 +4,7 @@
 
   &_round {
     border-radius: 100px;
-    border: 2px solid $color-primary;
+    border: 2px solid;
     width: 52px;
     height: 52px;
     display: flex;
@@ -12,10 +12,21 @@
     justify-content: center;
     @extend %transition;
 
-    &:hover {
-      background-color: $color-primary;
-    }
+
   }
+
+}
+
+.active {
+  border-color: $color-primary;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+}
+
+.inactive {
+  border-color: $color-dark-s;
 
 }
 
@@ -31,6 +42,12 @@
   background-image: url("../assets/icons/arrow-right.svg");
   width: 14px;
   height: 6px;
+}
+
+.greater-then_single {
+  background-image: url("../assets/icons/greater then single.svg");
+  width: 10px;
+  height: 11px;
 }
 
 .help__icon {
