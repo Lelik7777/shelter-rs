@@ -412,6 +412,7 @@ a {
 }
 .button:hover {
   background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 .button_color {
   background-color: #F1CDB3;
@@ -436,7 +437,7 @@ a {
   justify-content: center;
 }
 .icon_round:hover:not(.icon_round.inactive) {
-  background-color: #F1CDB3;
+  background-color: #FDDCC4;
 }
 .icon_round.active {
   background-color: #F1CDB3;
@@ -761,12 +762,17 @@ a {
   flex-flow: column;
   align-items: center;
   gap: 30px;
+  background-color: #FAFAFA;
 }
 .card:hover {
   cursor: pointer;
 }
+.card:hover {
+  background-color: #FFFFFF;
+}
 .card:hover button {
   background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .card__button {

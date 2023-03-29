@@ -20,19 +20,24 @@
 }
 
 
-
 .card {
   display: flex;
   flex-flow: column;
   align-items: center;
   gap: 30px;
   @extend %transition;
+  background-color: $color-light-s;
 
   &:hover {
     cursor: pointer;
 
+    & {
+      background-color: $color-light;
+    }
+
     button {
       background-color: $color-primary-light;
+      border-color:  $color-primary-light;
     }
   }
 }

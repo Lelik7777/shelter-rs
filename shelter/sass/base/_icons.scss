@@ -13,7 +13,7 @@
     @extend %transition;;
 
     &:hover:not(&.inactive) {
-      background-color: $color-primary;
+      background-color: $color-primary-light;
     }
 
     &.active {
