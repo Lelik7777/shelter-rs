@@ -12,6 +12,7 @@ $border: 2px;
 
   &:hover {
     background-color: $color-primary-light;
+    border-color:  $color-primary-light;
   }
 
   &_color {
