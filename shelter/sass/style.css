@@ -324,7 +324,7 @@ section, main, footer, header, article {
   font-family: Arial, sans-serif;
 }
 
-.pets .navigation__item, .main .navigation__item, .credit-card, .card, .footer__info, .icon_round, .button {
+.pets .navigation__item, .pets .header__logo, .main .navigation__item, .main .header__logo, .credit-card, .card, .footer__info, .icon_round, .button {
   transition: all 0.4s ease-out;
 }
 
@@ -848,6 +848,9 @@ a {
 .main .header__logo {
   color: #F1CDB3;
 }
+.main .header__logo:hover {
+  color: #FDDCC4;
+}
 .main .logo__subtitle {
   color: #FFFFFF;
 }
@@ -872,6 +875,9 @@ a {
 }
 .pets .header__logo {
   color: #545454;
+}
+.pets .header__logo:hover {
+  color: #292929;
 }
 .pets .navigation__item {
   color: #545454;
