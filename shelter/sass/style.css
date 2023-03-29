@@ -428,23 +428,22 @@ a {
 }
 .icon_round {
   border-radius: 100px;
-  border: 2px solid;
+  border: 2px solid #F1CDB3;
   width: 52px;
   height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.active {
-  border-color: #F1CDB3;
-}
-.active:hover {
+.icon_round:hover:not(.icon_round.inactive) {
   background-color: #F1CDB3;
 }
-
-.inactive {
+.icon_round.active {
+  background-color: #F1CDB3;
+}
+.icon_round.inactive {
   border-color: #CDCDCD;
+  cursor: no-drop;
 }
 
 .arrow_left {
@@ -460,8 +459,26 @@ a {
 }
 
 .greater-then_single {
-  background-image: url("../assets/icons/greater then single.svg");
+  background-image: url("../assets/icons/greater-then-single.svg");
   width: 10px;
+  height: 11px;
+}
+
+.greater-then_double {
+  background-image: url("../assets/icons/greater-then-double.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.less-then_single {
+  background-image: url("../assets/icons/less-then-single.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.less-then_double {
+  background-image: url("../assets/icons/less-then-double.svg");
+  width: 25px;
   height: 11px;
 }
 
