@@ -9,7 +9,7 @@
 .navigation__item {
   position: relative;
 
-  &.active {
+  &.active-link {
     &:after {
       content: '';
       position: absolute;
