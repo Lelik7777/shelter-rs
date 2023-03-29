@@ -597,6 +597,8 @@ a {
 
 .layout-3-column {
   display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
 }
 .layout-3-column > * {
   flex-basis: 25%;
@@ -604,13 +606,17 @@ a {
 
 .layout-4-column {
   display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
 }
 .layout-4-column > * {
-  flex-basis: 15%;
+  flex-basis: 20%;
 }
 
 .layout-5-column {
   display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
 }
 .layout-5-column > * {
   flex-basis: 16%;
@@ -754,7 +760,6 @@ a {
 
 .our-friends__slider {
   display: flex;
-  align-items: center;
 }
 
 .card {
@@ -870,7 +875,9 @@ a {
   gap: 60px;
 }
 .main.our-friends__slider {
+  align-items: center;
   gap: 53px;
+  flex-flow: wrap;
 }
 .main.slider__cards {
   gap: 90px;
@@ -895,11 +902,8 @@ a {
   gap: 45px;
 }
 .pets.our-friends__slider {
-  gap: 40px;
-}
-.pets.slider__cards {
-  flex-flow: wrap;
-  padding: 0 40px;
+  padding: 15px 0;
+  margin: 0 40px;
   gap: 30px 40px;
 }
 

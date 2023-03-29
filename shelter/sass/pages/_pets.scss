@@ -29,14 +29,11 @@
   }
 
   &.our-friends__slider {
-    gap: 40px;
-  }
-
-  &.slider__cards {
-    flex-flow: wrap;
-    padding: 0 40px;
+    padding: 15px 0;
+    margin: 0 40px;
     gap: 30px 40px;
   }
+
 }
 
 .slider__navigation {

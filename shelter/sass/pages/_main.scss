@@ -33,8 +33,9 @@
   }
 
   &.our-friends__slider {
+    align-items: center;
     gap: 53px;
-
+    flex-flow: wrap;
   }
 
   &.slider__cards {
