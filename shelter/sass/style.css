@@ -647,7 +647,7 @@ a {
 .navigation__item {
   position: relative;
 }
-.navigation__item.active:after {
+.navigation__item.active-link:after {
   content: "";
   position: absolute;
   display: inline-block;
