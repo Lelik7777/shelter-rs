@@ -4,30 +4,30 @@
 
   &_round {
     border-radius: 100px;
-    border: 2px solid;
+    border: 2px solid $color-primary;
     width: 52px;
     height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
-    @extend %transition;
+    @extend %transition;;
 
+    &:hover:not(&.inactive) {
+      background-color: $color-primary;
+    }
+
+    &.active {
+      background-color: $color-primary;
+
+    }
+
+    &.inactive {
+      border-color: $color-dark-s;
+      cursor: no-drop;
+
+    }
 
   }
-
-}
-
-.active {
-  border-color: $color-primary;
-
-  &:hover {
-    background-color: $color-primary;
-  }
-}
-
-.inactive {
-  border-color: $color-dark-s;
-
 }
 
 //webstorm throw errors but this is right way
@@ -45,8 +45,26 @@
 }
 
 .greater-then_single {
-  background-image: url("../assets/icons/greater then single.svg");
+  background-image: url("../assets/icons/greater-then-single.svg");
   width: 10px;
+  height: 11px;
+}
+
+.greater-then_double {
+  background-image: url("../assets/icons/greater-then-double.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.less-then_single {
+  background-image: url("../assets/icons/less-then-single.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.less-then_double {
+  background-image: url("../assets/icons/less-then-double.svg");
+  width: 25px;
   height: 11px;
 }
 
