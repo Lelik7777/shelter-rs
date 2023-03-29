@@ -3,8 +3,14 @@
   &.header {
     padding: 30px 0 90px;
   }
+
   .header__logo {
     color: $color-primary;
+    @extend %transition;
+
+    &:hover {
+      color: $color-primary-light;
+    }
   }
 
   .logo__subtitle {
@@ -20,10 +26,12 @@
     }
 
   }
-//for section our-friends
+
+  //for section our-friends
   &.our-friends__wrapper {
     gap: 60px;
   }
+
   &.our-friends__slider {
     gap: 53px;
 

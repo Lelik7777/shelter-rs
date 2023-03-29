@@ -7,6 +7,11 @@
 
   .header__logo {
     color: $color-dark-1;
+    @extend %transition;
+
+    &:hover {
+      color: $color-dark-3xl;
+    }
   }
 
   .navigation__item {
@@ -26,14 +31,15 @@
   &.our-friends__slider {
     gap: 40px;
   }
-  &.slider__cards{
+
+  &.slider__cards {
     flex-flow: wrap;
     padding: 0 40px;
     gap: 30px 40px;
   }
 }
 
-.slider__navigation{
+.slider__navigation {
   display: flex;
   gap: 20px;
 }
