@@ -22,3 +22,9 @@
     }
   }
 }
+.navigation__link{
+  @extend %font-f-secondary;
+  @include font();
+  margin: 0;
+  padding: 0;
+}

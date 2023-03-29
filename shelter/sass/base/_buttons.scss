@@ -8,6 +8,7 @@ $border: 2px;
   @extend %transition;
   cursor: pointer;
   color: $color-dark-3xl;
+  display: inline-block;
 
   &:hover {
     background-color: $color-primary-light;
