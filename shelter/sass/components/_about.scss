@@ -9,6 +9,7 @@
     flex-flow: column-reverse;
     align-items: center;
     gap: 80px;
+
   }
 }
 
@@ -39,5 +40,6 @@
 .about__image {
   @include media-tablet {
     margin-right: 90px;
+    max-height: 408px;
   }
 }
