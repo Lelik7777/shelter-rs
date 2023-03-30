@@ -569,6 +569,11 @@ a {
   margin: auto;
   padding: 0 40px;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+}
 
 .header__wrapper {
   display: flex;
@@ -693,11 +698,23 @@ a {
 
 .not-only__wrapper {
   display: flex;
+  flex-flow: wrap;
+}
+@media (max-width: 768px) {
+  .not-only__wrapper {
+    justify-content: center;
+    gap: 100px;
+  }
 }
 
 .not-only__content {
   display: flex;
   flex-flow: column;
+}
+@media (max-width: 768px) {
+  .not-only__content {
+    gap: 42px;
+  }
 }
 
 .content__title {
@@ -705,11 +722,33 @@ a {
   max-width: 310px;
   color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  .content__title {
+    margin: 0;
+  }
+}
 
 .not-only__text {
   max-width: 460px;
   margin: 0 42px 42px 0;
   color: #CDCDCD;
+}
+@media (max-width: 768px) {
+  .not-only__text {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .not-only__button {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .not-only__image {
+    margin-left: auto;
+  }
 }
 
 .about {
@@ -719,6 +758,13 @@ a {
 .about__wrapper {
   padding: 80px 0 100px 0;
   display: flex;
+}
+@media (max-width: 768px) {
+  .about__wrapper {
+    flex-flow: column-reverse;
+    align-items: center;
+    gap: 80px;
+  }
 }
 
 .about__content {
@@ -736,10 +782,21 @@ a {
   color: #545454;
   max-width: 370px;
 }
+@media (max-width: 768px) {
+  .about__title {
+    margin: 0;
+  }
+}
 
 .about__text {
   max-width: 430px;
   color: #4C4C4C;
+}
+
+@media (max-width: 768px) {
+  .about__image {
+    margin-right: 90px;
+  }
 }
 
 .our-friends {
@@ -854,7 +911,12 @@ a {
 }
 
 .main.header {
-  padding: 30px 0 90px;
+  padding: 30px 0 90px 0;
+}
+@media (max-width: 768px) {
+  .main.header {
+    padding: 30px 0 60px 0;
+  }
 }
 .main .header__logo {
   color: #F1CDB3;
@@ -868,7 +930,10 @@ a {
 .main .navigation__item {
   color: #CDCDCD;
 }
-.main .navigation__item:hover {
+.main .navigation__item.active-link {
+  color: #FAFAFA;
+}
+.main .navigation__item:not(.active-link):hover {
   color: #FAFAFA;
 }
 .main.our-friends__wrapper {
