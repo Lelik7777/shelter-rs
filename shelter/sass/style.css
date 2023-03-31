@@ -631,10 +631,29 @@ a {
   background: radial-gradient(100% 215.42% at 0% 0%, #513D2F 0%, #1A1A1C 100%);
   padding: 40px 0 0 0;
 }
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0 0 0;
+  }
+}
 
 .footer__wrapper {
   padding: 0 40px;
   gap: 160px;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    padding: 0 40px;
+    gap: 60px;
+    justify-content: center;
+  }
+  .footer__wrapper > * {
+    flex-basis: 44%;
+  }
+  .footer__wrapper img {
+    max-height: 310px;
+    max-width: 300px;
+  }
 }
 
 .footer__contacts {
@@ -653,6 +672,11 @@ a {
 .footer__title {
   color: #FFFFFF;
   margin: 16px 0 0 0;
+}
+@media (max-width: 768px) {
+  .footer__title {
+    margin: 0;
+  }
 }
 
 .footer__info {
@@ -885,6 +909,13 @@ a {
   justify-content: center;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .in-addition__wrapper {
+    flex-flow: column-reverse;
+    align-items: center;
+    gap: 60px;
+  }
+}
 .in-addition__wrapper img {
   max-height: 261px;
 }
@@ -994,10 +1025,32 @@ a {
 .pets.our-friends__wrapper {
   gap: 45px;
 }
+@media (max-width: 768px) {
+  .pets.our-friends__wrapper {
+    gap: 0;
+    padding: 80px 0 76px 0;
+  }
+}
+@media (max-width: 768px) {
+  .pets .our-friends__title {
+    margin: 0 0 30px 0;
+  }
+}
 .pets.our-friends__slider {
   padding: 15px 0;
   margin: 0 40px;
   gap: 30px 40px;
+}
+@media (max-width: 768px) {
+  .pets.our-friends__slider {
+    padding: 0;
+    margin: 0 94px 40px 94px;
+    max-height: 1365px;
+    overflow: hidden;
+  }
+  .pets.our-friends__slider > * {
+    flex-basis: 45%;
+  }
 }
 
 .slider__navigation {
