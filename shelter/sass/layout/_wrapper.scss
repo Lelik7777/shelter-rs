@@ -2,4 +2,8 @@
   max-width: $desktop-width;
   margin: auto;
   padding: 0 40px;
+  @include media-tablet{
+    padding: 0 30px;
+    //max-width: $tablet-width;
+  }
 }

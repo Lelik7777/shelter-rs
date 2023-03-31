@@ -1,7 +1,10 @@
 .main {
   //for header
   &.header {
-    padding: 30px 0 90px;
+    padding: 30px 0 90px 0;
+    @include media-tablet {
+      padding: 30px 0 60px 0;
+    }
   }
 
   .header__logo {
@@ -21,7 +24,11 @@
     color: $color-dark-s;
     @extend %transition;
 
-    &:hover {
+    &.active-link {
+      color: $color-light-s;
+    }
+
+    &:not(.active-link):hover {
       color: $color-light-s;
     }
 
@@ -33,11 +40,25 @@
   }
 
   &.our-friends__slider {
+    align-items: center;
     gap: 53px;
-
+    flex-flow: wrap;
+    @include media-tablet {
+      margin: 0 30px;
+      gap: 12px;
+    }
   }
 
   &.slider__cards {
     gap: 90px;
+    @include media-tablet {
+      max-width: 580px;
+      gap:40px;
+      overflow: hidden;
+      flex-flow: nowrap;
+      > * {
+        flex-basis: 47%;
+      }
+    }
   }
 }

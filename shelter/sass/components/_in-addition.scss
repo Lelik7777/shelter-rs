@@ -7,6 +7,11 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+  @include media-tablet {
+    flex-flow: column-reverse;
+    align-items: center;
+    gap: 60px;
+  }
 
   img {
     max-height: 261px;

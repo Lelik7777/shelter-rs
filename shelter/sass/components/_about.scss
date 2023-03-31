@@ -5,6 +5,12 @@
 .about__wrapper {
   padding: 80px 0 100px 0;
   display: flex;
+  @include media-tablet {
+    flex-flow: column-reverse;
+    align-items: center;
+    gap: 80px;
+
+  }
 }
 
 .about__content {
@@ -21,9 +27,19 @@
   margin: 14px 0 0 0;
   color: $color-dark-1;
   max-width: 370px;
+  @include media-tablet {
+    margin: 0;
+  }
 }
 
 .about__text {
   max-width: 430px;
   color: $color-dark-xl;
+}
+
+.about__image {
+  @include media-tablet {
+    margin-right: 90px;
+    max-height: 408px;
+  }
 }

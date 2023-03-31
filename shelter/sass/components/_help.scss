@@ -19,5 +19,13 @@
   justify-content: center;
   gap: 55px 120px;
   padding: 0 87px;
+  @include media-tablet{
+    gap: 55px 60px;
+    padding: 0 69px;
+    >*{
+      max-width: 170px;
+      flex-basis: 33%;
+    }
+  }
 }
 

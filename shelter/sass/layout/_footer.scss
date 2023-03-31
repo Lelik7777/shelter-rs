@@ -1,11 +1,26 @@
 .footer {
   background: radial-gradient(100% 215.42% at 0% 0%, $bg-color-footer-1 0%, $bg-color-footer-2 100%);
   padding: 40px 0 0 0;
+  @include media-tablet {
+    padding: 30px 0 0 0;
+  }
 }
 
 .footer__wrapper {
   padding: 0 40px;
   gap: 160px;
+  @include media-tablet {
+    padding: 0 40px;
+    gap: 60px;
+    justify-content: center;
+    > * {
+      flex-basis: 44%;
+    }
+    & img {
+      max-height: 310px;
+      max-width: 300px;
+    }
+  }
 }
 
 .footer__contacts {
@@ -24,6 +39,9 @@
 .footer__title {
   color: $color-light;
   margin: 16px 0 0 0;
+  @include media-tablet {
+    margin: 0;
+  }
 }
 
 .footer__info {
