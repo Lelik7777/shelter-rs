@@ -1,5 +1,4 @@
 
-
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -21,4 +20,10 @@
   @include font(1.3rem, 1.495rem);
   letter-spacing: 0.1em;
   padding: 0 0 0 4px;
+}
+
+.header__navigation {
+  @media(max-width: 767px) {
+    display: none;
+  }
 }

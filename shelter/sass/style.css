@@ -560,6 +560,39 @@ a {
   height: 32px;
 }
 
+.burger__line, .header__burger:after, .header__burger:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 2px solid #F1CDB3;
+}
+
+.header__burger {
+  display: none;
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+.header__burger:before {
+  right: 0;
+  top: 0px;
+}
+.header__burger:after {
+  top: 20px;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .header__burger {
+    display: inline-block;
+  }
+}
+
+.burger__line {
+  right: 0;
+  top: 10px;
+  width: 110%;
+}
+
 .header-main {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 }
@@ -598,6 +631,12 @@ a {
   font-style: normal;
   letter-spacing: 0.1em;
   padding: 0 0 0 4px;
+}
+
+@media (max-width: 767px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .layout-3-column {

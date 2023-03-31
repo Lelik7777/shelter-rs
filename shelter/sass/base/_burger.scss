@@ -1,0 +1,37 @@
+%burger-line {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border: 2px solid $color-primary;
+}
+
+.header__burger {
+  display: none;
+  width: 30px;
+  height: 22px;
+  position: relative;
+
+  &:before {
+    @extend %burger-line;
+    right: 0;
+    top: 0px;
+  }
+
+  &:after {
+    @extend %burger-line;
+    top: 20px;
+    right: 0;
+  }
+
+  @media (max-width: 767px) {
+    display: inline-block;
+  }
+}
+
+.burger__line {
+  @extend %burger-line;
+  right: 0;
+  top: 10px;
+  width: 110%;
+}
+
