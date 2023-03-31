@@ -6,4 +6,7 @@
     padding: 0 30px;
     //max-width: $tablet-width;
   }
+  @include media-mobile{
+    padding: 0 10px;
+  }
 }

@@ -5,6 +5,9 @@
     justify-content: center;
     gap: 100px;
   }
+  @include media-mobile {
+    gap: 105px;
+  }
 }
 
 .not-only__content {
@@ -13,7 +16,9 @@
   @include media-tablet {
     gap: 42px;
   }
-
+  @include media-mobile {
+    align-items: center;
+  }
 }
 
 .content__title {
@@ -22,6 +27,9 @@
   color: $color-light;
   @include media-tablet {
     margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
 }
 
@@ -31,6 +39,18 @@
   color: $color-dark-s;
   @include media-tablet {
     margin: 0;
+  }
+  @include media-mobile {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    > * {
+      display: block;
+    }
+    & span:last-child{
+      margin-left: 19px;
+    }
   }
 }
 
