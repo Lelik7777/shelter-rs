@@ -369,6 +369,14 @@ h3 {
   letter-spacing: 0.06em;
   margin: 0;
 }
+@media (max-width: 320px) {
+  h3 {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
 
 h4 {
   font-size: 2rem;
@@ -819,6 +827,11 @@ a {
     margin: 0;
     display: flex;
     flex-flow: column;
+    align-items: start;
+  }
+}
+@media (max-width: 320px) {
+  .content__title {
     align-items: center;
   }
 }
@@ -864,7 +877,7 @@ a {
 }
 
 .about__wrapper {
-  padding: 80px 0 100px 0;
+  padding: 80px 0 95px 0;
   display: flex;
 }
 @media (max-width: 768px) {
@@ -874,11 +887,24 @@ a {
     gap: 80px;
   }
 }
+@media (max-width: 320px) {
+  .about__wrapper {
+    padding: 42px 10px;
+    gap: 42px;
+  }
+}
 
 .about__content {
   display: flex;
   flex-flow: column;
   gap: 25px;
+}
+@media (max-width: 320px) {
+  .about__content {
+    gap: 0;
+    max-width: 300px;
+    align-items: center;
+  }
 }
 
 .about__img {
@@ -895,10 +921,30 @@ a {
     margin: 0;
   }
 }
+@media (max-width: 320px) {
+  .about__title {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 0 25px 0;
+  }
+}
 
 .about__text {
   max-width: 430px;
   color: #4C4C4C;
+}
+@media (max-width: 320px) {
+  .about__text {
+    padding: 0 15px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 320px) {
+  .text_first {
+    margin: 0 0 22px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -926,6 +972,11 @@ a {
 
 .our-friends__slider {
   display: flex;
+}
+@media (max-width: 320px) {
+  .our-friends__slider {
+    flex-flow: column !important;
+  }
 }
 
 .card {
@@ -1065,6 +1116,12 @@ a {
 .main.our-friends__wrapper {
   gap: 60px;
 }
+@media (max-width: 320px) {
+  .main.our-friends__wrapper {
+    gap: 42px;
+    padding: 33px 10px 42px 10px;
+  }
+}
 .main.our-friends__slider {
   align-items: center;
   gap: 53px;
@@ -1088,6 +1145,39 @@ a {
   }
   .main.slider__cards > * {
     flex-basis: 47%;
+  }
+}
+@media (max-width: 320px) {
+  .main.slider__cards {
+    max-width: 100%;
+    flex-flow: wrap;
+    margin: 0 0 10px 0;
+  }
+  .main.slider__cards > * {
+    flex-basis: 100%;
+  }
+}
+.main .card:not(:first-child) {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .slider__button {
+    display: none;
+  }
+  .slider__button.mobile {
+    display: flex;
+  }
+}
+
+.mobile-slider__buttons {
+  display: none;
+}
+@media (max-width: 320px) {
+  .mobile-slider__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
   }
 }
 

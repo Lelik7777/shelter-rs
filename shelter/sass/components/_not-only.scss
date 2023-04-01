@@ -29,6 +29,9 @@
     margin: 0;
     display: flex;
     flex-flow: column;
+    align-items: start;
+  }
+  @include media-mobile{
     align-items: center;
   }
 }
@@ -41,14 +44,13 @@
     margin: 0;
   }
   @include media-mobile {
-
     display: flex;
     flex-flow: column;
     align-items: center;
     > * {
       display: block;
     }
-    & span:last-child{
+    & span:last-child {
       margin-left: 19px;
     }
   }
