@@ -74,11 +74,22 @@
   align-items: center;
   max-width: max-content;
   gap: 30px;
+  @include media-mobile {
+    gap: 10px;
+    max-width: 130px;
+    & h4{
+      @include font(1.5rem, 1.7rem);
+    }
+  }
 }
 
 .icon_help {
   width: 60px;
   height: 60px;
+  @include media-mobile{
+  background-size: 50px 50px;
+    background-repeat: no-repeat;
+  }
 }
 
 //webstorm throw errors but this is right way
@@ -88,11 +99,11 @@
 
 .icon_transport {
   background-image: url("../assets/icons/icon-transportation.svg");
+
 }
 
 .icon_toys {
   background-image: url("../assets/icons/icon-toys.svg");
-
 }
 
 .icon_bowls {
