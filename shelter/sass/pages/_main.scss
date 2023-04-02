@@ -79,9 +79,12 @@
 
   }
 
-  .card:not(:first-child) {
-    display: none;
+  @include media-mobile {
+    .card:not(:first-child) {
+      display: none;
+    }
   }
+
 }
 
 .slider__button {
