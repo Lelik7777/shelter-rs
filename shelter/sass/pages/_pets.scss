@@ -23,6 +23,10 @@
     }
   }
 
+  &.header__burger:before, :after, &.burger__line {
+    border-color: $color-dark;
+  }
+
   //for section our-friends
   &.our-friends__wrapper {
     gap: 45px;

@@ -34,9 +34,14 @@
 
   }
 
+
   //for section our-friends
   &.our-friends__wrapper {
     gap: 60px;
+    @include media-mobile {
+      gap: 42px;
+      padding: 33px 10px 42px 10px;
+    }
   }
 
   &.our-friends__slider {
@@ -47,18 +52,52 @@
       margin: 0 30px;
       gap: 12px;
     }
+
   }
 
   &.slider__cards {
     gap: 90px;
     @include media-tablet {
       max-width: 580px;
-      gap:40px;
+      gap: 40px;
       overflow: hidden;
       flex-flow: nowrap;
       > * {
         flex-basis: 47%;
+
       }
     }
+    @include media-mobile {
+      max-width: 100%;
+      flex-flow: wrap;
+      margin: 0 0 10px 0;
+      > * {
+        flex-basis: 100%;
+
+      }
+    }
+
+  }
+
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.slider__button {
+  @include media-mobile {
+    display: none;
+    &.mobile {
+      display: flex;
+    }
+  }
+}
+
+.mobile-slider__buttons {
+  display: none;
+  @include media-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
   }
 }
