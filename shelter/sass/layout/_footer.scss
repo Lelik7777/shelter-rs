@@ -4,6 +4,9 @@
   @include media-tablet {
     padding: 30px 0 0 0;
   }
+  @include media-mobile {
+    padding: 30px 10px 0 10px;
+  }
 }
 
 .footer__wrapper {
@@ -21,6 +24,16 @@
       max-width: 300px;
     }
   }
+  @include media-mobile {
+    gap: 40px;
+    padding: 0;
+    > * {
+      flex-basis: 100%;
+    }
+    & picture{
+      max-width: 260px;
+    }
+  }
 }
 
 .footer__contacts {
@@ -28,12 +41,29 @@
   display: flex;
   flex-flow: column;
   gap: 40px;
+  @include media-mobile {
+    align-items: center;
+    max-width: 270px;
+    text-align: center;
+  }
 }
 
 .footer__location {
   display: flex;
   flex-flow: column;
   gap: 33px;
+  @include media-mobile {
+    max-width: 300px;
+    text-align: center;
+    gap: 40px;
+    & h3 {
+      align-self: center;
+      max-width: 270px;
+    }
+    & a {
+      text-align: justify;
+    }
+  }
 }
 
 .footer__title {

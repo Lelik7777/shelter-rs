@@ -33,6 +33,7 @@
 
   &:hover {
     cursor: pointer;
+    box-shadow:0 2px 35px 0 rgba(13, 13, 13, 0.04) ;
 
     & {
       background-color: $color-light;
