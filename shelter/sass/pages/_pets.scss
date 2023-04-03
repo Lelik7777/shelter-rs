@@ -9,6 +9,10 @@
     color: $color-dark-1;
     @extend %transition;
 
+    & .logo__subtitle {
+      color: $color-dark-3xl;
+    }
+
     &:hover {
       color: $color-dark-3xl;
     }
@@ -34,11 +38,18 @@
       gap: 0;
       padding: 80px 0 76px 0;
     }
+    @include media-mobile {
+      padding: 42px 10px;
+      gap: 42px;
+    }
   }
 
   .our-friends__title {
     @include media-tablet {
       margin: 0 0 30px 0;
+    }
+    @include media-mobile {
+      margin: 0;
     }
   }
 
@@ -55,11 +66,18 @@
         flex-basis: 45%;
       }
     }
+    @include media-mobile {
+      margin: 0;
+    }
   }
+
 
 }
 
 .slider__navigation {
   display: flex;
   gap: 20px;
+  @include media-mobile{
+    gap: 10px;
+  }
 }
