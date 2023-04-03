@@ -1134,6 +1134,11 @@ a {
     max-height: 136px;
   }
 }
+@media (min-width: 1200px) {
+  .in-addition__wrapper picture {
+    margin: 9px 0 0 0;
+  }
+}
 .in-addition__wrapper img {
   max-height: 261px;
 }
