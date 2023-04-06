@@ -28,7 +28,11 @@
 }
 
 .about__img {
-  margin: 0 120px 0 215px;
+  max-width: 100%;
+  @media (min-width: 769px) {
+    padding: 0 120px 0 215px;
+  }
+
 }
 
 .about__title {
@@ -49,7 +53,7 @@
 .about__text {
   max-width: 430px;
   color: $color-dark-xl;
-  @include media-mobile{
+  @include media-mobile {
     padding: 0 15px;
     text-align: justify;
   }
@@ -63,7 +67,6 @@
 
 .about__image {
   @include media-tablet {
-    margin-right: 90px;
     max-height: 408px;
   }
 }

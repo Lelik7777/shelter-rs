@@ -65,5 +65,9 @@
 .not-only__image {
   @include media-tablet {
     margin-left: auto;
+
   }
+}
+.not-only__img{
+  max-width: 100%;
 }
