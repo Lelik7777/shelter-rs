@@ -85,5 +85,8 @@
   &:hover {
     color: $color-primary-light;
   }
+  & .icon_pin{
+    flex-shrink: 0;
+  }
 }
 

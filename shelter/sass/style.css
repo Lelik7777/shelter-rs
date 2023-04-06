@@ -811,6 +811,9 @@ a {
 .footer__info:hover {
   color: #FDDCC4;
 }
+.footer__info .icon_pin {
+  flex-shrink: 0;
+}
 
 .navigation {
   display: flex;
