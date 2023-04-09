@@ -1,5 +1,4 @@
 
-
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -7,6 +6,10 @@ html {
 
 body {
   font-size: 1.6rem;
+
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 
@@ -65,5 +68,21 @@ a {
   color: inherit;
   text-decoration: none;
   margin: 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $color-dark-3xl;
+  opacity: 0.8;
+  z-index: 5;
+
+  &._active {
+    display: block;
+  }
 }
 
