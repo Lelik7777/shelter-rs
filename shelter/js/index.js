@@ -6,9 +6,27 @@ const $overlay = document.querySelector('.overlay');
 const active = '_active';
 const lock = '_lock';
 
-window.onload = function () {
-    const data = fetch('./data/pets.json').then(res => res.json())
-        .then(data => console.log(data));
+let data;
+
+async function getData() {
+    try {
+        const res = await fetch('data/pets.json');
+        data = await res.json();
+    } catch (e) {
+        console.log(e)
+    }
+
+
+}
+
+window.onload = async function () {
+
+    // fetch('./data/pets.json').then(res => res.json())
+    //     .then(res => data = res);
+    // console.log(data);
+    await getData();
+    console.log(data);
+
 };
 
 //burger menu mechanism
