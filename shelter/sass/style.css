@@ -324,7 +324,7 @@ section, main, footer, header, article {
   font-family: Arial, sans-serif;
 }
 
-.pets .navigation__item, .pets .header__logo, .main .navigation__item, .main .header__logo, .credit-card, .card, .footer__info, .header__navigation, .icon_round, .button {
+.pets .navigation__item, .pets .header__logo, .main .navigation__item, .main .header__logo, .credit-card, .card, .footer__info, .header__navigation, .burger__line, .header__burger:after, .header__burger:before, .icon_round, .button, .overlay {
   transition: all 0.4s ease-out;
 }
 
@@ -419,18 +419,16 @@ a {
 }
 
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   height: 100%;
-  width: 100%;
+  width: -webkit-calc(100% - 320px);
   background-color: #292929;
   opacity: 0.8;
-  z-index: 5;
 }
 .overlay._active {
-  display: block;
+  left: 0;
 }
 
 .button {
@@ -1422,7 +1420,7 @@ a {
 .pets .navigation__item:hover {
   color: #292929;
 }
-.pets.header__burger:before, .pets :after, .pets.burger__line {
+.pets.header__burger:before, .pets.header__burger:after, .pets.burger__line {
   background-color: #000000;
 }
 .pets.our-friends__wrapper {

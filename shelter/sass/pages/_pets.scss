@@ -31,8 +31,8 @@
     }
   }
 
-  &.header__burger:before, :after, &.burger__line {
-    background-color: $color-dark;;
+  &.header__burger:before, &.header__burger:after, &.burger__line {
+    background-color: $color-dark;
   }
 
   //for section our-friends

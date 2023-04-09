@@ -71,18 +71,17 @@ a {
 }
 
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   height: 100%;
-  width: 100%;
+  width: -webkit-calc(100% - 320px);
   background-color: $color-dark-3xl;
   opacity: 0.8;
-  z-index: 5;
+  @extend %transition;
 
   &._active {
-    display: block;
+    left: 0;
   }
 }
 
