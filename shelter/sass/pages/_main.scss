@@ -1,3 +1,4 @@
+
 .main {
   //for header
   &.header {
@@ -40,35 +41,41 @@
     gap: 60px;
     @include media-mobile {
       gap: 42px;
-      padding: 33px 10px 42px 10px;
+      padding: 33px 10px 56px 10px;
     }
   }
 
   &.our-friends__slider {
     align-items: center;
-    gap: 53px;
-    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 0 11.33%;
+    //gap: 53px;
+    //flex-flow: wrap;
     @include media-tablet {
-      padding: 0 25px;
-      gap: 12px;
-      justify-content: center;
+      // gap: 42px;
+      flex-flow: column;
+    }
+    @include media-mobile {
+      padding: 0;
     }
 
   }
 
   &.slider__cards {
-    gap: 90px;
+    width: 100%;
+    overflow: hidden;
     @include media-tablet {
-      max-width: 580px;
-      gap: 40px;
+      width: 93.18%;
       overflow: hidden;
       flex-flow: nowrap;
-      > * {
-        flex-basis: 47%;
-
-      }
+      //> * {
+      //  flex-basis: 47%;
+      //
+      //}
     }
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
       max-width: 100%;
       flex-flow: wrap;
       margin: 0 0 10px 0;
@@ -92,20 +99,74 @@
 
 }
 
+
+.slider {
+  display: flex;
+  gap: 90px;
+  position: relative;
+  left: -webkit-calc(-100% - 90px);
+
+
+}
+
+@keyframes move-right {
+  from {
+    left: -webkit-calc(-100% - 90px);
+  }
+  to {
+    left: -webkit-calc(-200% - 180px);
+  }
+
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 5s;
+}
+@keyframes move-left {
+  from {
+    left: -webkit-calc(-100% - 90px);
+  }
+  to {
+    left: 0%;
+  }
+
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 5s;
+}
+
 .slider__button {
-  @media (max-width: 767px){
+  position: absolute;
+  top: -webkit-calc(50% - 26px);
+
+  @media (max-width: 767px) {
     display: none;
+    position: static;
     &.mobile {
       display: flex;
+
     }
   }
+
+  &.left {
+    left: 40px;
+  }
+
+  &.right {
+    right: 40px;
+  }
+
 }
 
 .mobile-slider__buttons {
   display: none;
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     display: flex;
     justify-content: space-between;
     width: 68%;
   }
 }
+
