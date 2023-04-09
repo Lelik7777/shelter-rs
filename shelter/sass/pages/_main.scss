@@ -20,6 +20,10 @@
     color: $color-light;
   }
 
+  &.header__navigation {
+    background-color: $color-dark-3xl;
+  }
+
   .navigation__item {
     color: $color-dark-s;
     @extend %transition;
@@ -34,6 +38,9 @@
 
   }
 
+  //&.header__burger:before, :after, &.burger__line {
+  //  background-color: $color-primary;
+  //}
 
   //for section our-friends
   &.our-friends__wrapper {
@@ -68,7 +75,7 @@
 
       }
     }
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
       max-width: 100%;
       flex-flow: wrap;
       margin: 0 0 10px 0;
@@ -93,7 +100,7 @@
 }
 
 .slider__button {
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     display: none;
     &.mobile {
       display: flex;
@@ -103,7 +110,7 @@
 
 .mobile-slider__buttons {
   display: none;
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     display: flex;
     justify-content: space-between;
     width: 68%;
