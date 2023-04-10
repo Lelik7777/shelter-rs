@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/not-only/start-screen-puppy.png" sizes="20x20">
     <link rel="stylesheet" href="./sass/style.css">
 </head>
-<body>
+<body data-info="body">
 
 <div class="header-main">
     <header class="header main">
@@ -78,46 +78,90 @@
         <h3 class="our-friends__title">Our friends who <br>
             are looking for a house</h3>
         <div class="our-friends__slider main">
-            <div class="slider__button">
+            <div id="btn-left" class="slider__button left">
                 <span class="icon icon_round ">
                     <span class="arrow_left"></span>
                 </span>
             </div>
-            <div class="slider__cards layout-3-column main">
-                <div class="card">
-                    <img src="assets/images/our%20friends/pets-katrine.png" alt="pet katrine">
-                    <h4 class="card__title">Katrine</h4>
-                    <div class="card__button">
-                        <button class="button button_border">Learn more</button>
+            <div  class="slider__cards  main">
+                <div id="slider" class="slider">
+                    <div class="card left">
+                        <img src="assets/images/our%20friends/pets-woody.png" alt="pet woody">
+                        <h4 class="card__title">Woody1</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/our%20friends/pets-jennifer.png" alt="pet jennifer">
-                    <h4 class="card__title">Jennifer</h4>
-                    <div class="card__button">
-                        <button class="button button_border">Learn more</button>
+                    <div class="card left">
+                        <img src="assets/images/our%20friends/pets-katrine.png" alt="pet katrine">
+                        <h4 class="card__title">Katrine2</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/our%20friends/pets-woody.png" alt="pet woody">
-                    <h4 class="card__title">Woody</h4>
-                    <div class="card__button">
-                        <button class="button button_border">Learn more</button>
+                    <div class="card left">
+                        <img src="assets/images/our%20friends/pets-jennifer.png" alt="pet jennifer">
+                        <h4 class="card__title">Jennifer3</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="card center">
+                        <img src="assets/images/our%20friends/pets-katrine.png" alt="pet katrine">
+                        <h4 class="card__title">Katrine4</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="card center">
+                        <img src="assets/images/our%20friends/pets-jennifer.png" alt="pet jennifer">
+                        <h4 class="card__title">Jennifer5</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="card center">
+                        <img src="assets/images/our%20friends/pets-woody.png" alt="pet woody">
+                        <h4 class="card__title">Woody6</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="card right">
+                        <img src="assets/images/our%20friends/pets-jennifer.png" alt="pet jennifer">
+                        <h4 class="card__title">Jennifer</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="card right">
+                        <img src="assets/images/our%20friends/pets-woody.png" alt="pet woody">
+                        <h4 class="card__title">Woody</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="card right">
+                        <img src="assets/images/our%20friends/pets-katrine.png" alt="pet katrine">
+                        <h4 class="card__title">Katrine</h4>
+                        <div class="card__button">
+                            <button class="button button_border">Learn more</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="slider__button">
+            <div id="btn-right" class="slider__button right">
                 <span class="icon icon_round ">
                     <span class="arrow_right"></span>
                 </span>
             </div>
             <div class="mobile-slider__buttons">
-                <div class="slider__button mobile">
+                <div id="mobile-btn-left" class="slider__button mobile">
                 <span class="icon icon_round ">
                     <span class="arrow_left"></span>
                 </span>
                 </div>
-                <div class="slider__button mobile">
+                <div id="mobile-btn-right" class="slider__button mobile">
                 <span class="icon icon_round ">
                     <span class="arrow_right"></span>
                 </span>
@@ -228,6 +272,6 @@
     </div>
 </footer>
 <div class="overlay"></div>
-<script src="js/index.js"></script>
+<script type="module" src="js/index.js"></script>
 </body>
 </html>
