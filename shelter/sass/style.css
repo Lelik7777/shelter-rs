@@ -1313,9 +1313,6 @@ a {
 .main .logo__subtitle {
   color: #FFFFFF;
 }
-.main.header__navigation {
-  background-color: #292929;
-}
 .main .navigation__item {
   color: #CDCDCD;
 }
@@ -1331,33 +1328,35 @@ a {
 @media (max-width: 320px) {
   .main.our-friends__wrapper {
     gap: 42px;
-    padding: 33px 10px 42px 10px;
+    padding: 33px 10px 56px 10px;
   }
 }
 .main.our-friends__slider {
   align-items: center;
-  gap: 53px;
-  flex-flow: wrap;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 0 11.33%;
 }
 @media (max-width: 768px) {
   .main.our-friends__slider {
-    padding: 0 25px;
-    gap: 12px;
-    justify-content: center;
+    flex-flow: column;
+    padding: 0 12.23%;
+  }
+}
+@media (max-width: 320px) {
+  .main.our-friends__slider {
+    padding: 0;
   }
 }
 .main.slider__cards {
-  gap: 90px;
+  width: 100%;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .main.slider__cards {
-    max-width: 580px;
-    gap: 40px;
     overflow: hidden;
     flex-flow: nowrap;
-  }
-  .main.slider__cards > * {
-    flex-basis: 47%;
   }
 }
 @media (max-width: 767px) {
@@ -1366,25 +1365,78 @@ a {
     flex-flow: wrap;
     margin: 0 0 10px 0;
   }
-  .main.slider__cards > * {
-    flex-basis: 100%;
-  }
-  .main.slider__cards .card:not(:first-child) {
-    display: none;
+}
+.slider {
+  display: flex;
+  gap: 90px;
+  position: relative;
+  left: -webkit-calc(-100% - 90px);
+}
+@media (max-width: 768px) {
+  .slider {
+    gap: 40px;
+    left: -webkit-calc(-100% - 40px);
   }
 }
 @media (max-width: 320px) {
-  .main .card:not(:first-child) {
-    display: none;
+  .slider {
+    left: -98%;
   }
 }
 
+@keyframes move-right {
+  from {
+    left: -webkit-calc(-100% - 90px);
+  }
+  to {
+    left: -webkit-calc(-200% - 180px);
+  }
+}
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 5s;
+}
+
+@keyframes move-left {
+  from {
+    left: -webkit-calc(-100% - 90px);
+  }
+  to {
+    left: 0%;
+  }
+}
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 5s;
+}
+
+.slider__button {
+  position: absolute;
+  top: -webkit-calc(50% - 26px);
+}
 @media (max-width: 767px) {
   .slider__button {
     display: none;
+    position: static;
   }
   .slider__button.mobile {
     display: flex;
+  }
+}
+.slider__button.left {
+  left: 40px;
+}
+@media (max-width: 768px) {
+  .slider__button.left {
+    left: 30px;
+  }
+}
+.slider__button.right {
+  right: 40px;
+}
+@media (max-width: 768px) {
+  .slider__button.right {
+    right: 30px;
   }
 }
 
