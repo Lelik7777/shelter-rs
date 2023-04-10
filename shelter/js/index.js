@@ -77,7 +77,9 @@ async function getData() {
 }
 
 window.onload = async function () {
-
+alert(`привет. Работа еще не закончена. 
+Если есть возможность еще раз проверить позже, 
+то пожалуйста оставь дискорд или телеграм`)
     // fetch('./data/pets.json').then(res => res.json())
     //     .then(res => data = res);
     // console.log(data);
