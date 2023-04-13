@@ -1,4 +1,131 @@
-.overlay_modal{
-position: fixed;
- background-color: #CDCDCD;
+.overlay_modal {
+  position: fixed;
+  background-color: rgba(41, 41, 41, 0.6);
+  display: grid;
+  inset: 0;
+  place-items: center;
+  z-index: 999;
+
 }
+
+.modal {
+  display: grid;
+  grid-template-columns:500px 350px;
+  grid-template-rows: 500px;
+  column-gap: 30px;
+  align-items: center;
+  background-color: $color-light-s;
+  border-radius: 9px;
+  position: relative;
+  @media (max-width: 1000px) {
+    grid-template-columns:350px 280px;
+    grid-template-rows: 350px;
+    column-gap: 11px;
+  }
+  @media(max-width: 600px) {
+    grid-template-columns: 240px;
+    grid-template-rows: 341px;
+    gap: 0;
+  }
+}
+
+.modal__image {
+  @media(max-width: 600px) {
+    display: none;
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.modal__content {
+  @media (max-width: 600px) {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.modal__title {
+  margin: 0 0 10px 0;
+  @media (max-width: 600px) {
+    @include font(35px, 45px);
+  }
+}
+
+.modal__subtitle {
+  margin: 0 0 40px 0;
+  @media (max-width: 1000px) {
+    margin: 0 0 20px 0;
+  }
+  @media (max-width: 600px) {
+    @include font(20px, 23px);
+  }
+}
+
+.modal__text {
+  margin: 0 20px 40px 0;
+  line-height: 1.7rem;
+  @media (max-width: 1000px) {
+    margin: 0 9px 20px 0;
+    line-height: 14.3px;
+  }
+  @media (max-width: 600px) {
+    @include font(13px, 14px);
+    letter-spacing: 0.06em;
+    margin: 0 0 24px 0;
+    padding: 0 10px;
+  }
+}
+
+.modal__items {
+  margin: 0;
+  padding: 0;
+  @media (max-width: 600px) {
+    padding: 0 10px;
+  }
+}
+
+.modal__item {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06rem;
+  @include font(15px, 16.5px);
+  flex-flow: wrap;
+}
+
+.dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: $color-primary;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+
+}
+
+.item__title {
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+.btn_close {
+  position: absolute;
+  top: -52px;
+  right: -40px;
+  @media(max-width: 600px) {
+    right: -35px;
+  }
+
+  & span {
+    background-image: url("../assets/icons/Vector.svg");
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+  }
+}
+
+

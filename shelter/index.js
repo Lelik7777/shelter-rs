@@ -52,17 +52,21 @@ function getContent(arrEl) {
 }
 
 function createSlider(data, numCards, arrSelector) {
-    $slider.innerHTML = '';
-    for (let i = 0; i < numCards; i++) {
-        if (i < 3) {
-            $slider.insertAdjacentHTML('beforeend', createCard(data[i], arrSelector[0]));
+    if ($slider) {
+        $slider.innerHTML = '';
+        for (let i = 0; i < numCards; i++) {
+            if (i < 3) {
+                $slider.insertAdjacentHTML('beforeend', createCard(data[i], arrSelector[0]));
+            }
+            if (i > 2 && i < 6) {
+                $slider.insertAdjacentHTML('beforeend', createCard(data[i], arrSelector[1]));
+            }
+            if (i >= 6)
+                $slider.insertAdjacentHTML('beforeend', createCard(data[i], arrSelector[2]));
         }
-        if (i > 2 && i < 6) {
-            $slider.insertAdjacentHTML('beforeend', createCard(data[i], arrSelector[1]));
-        }
-        if (i >= 6)
-            $slider.insertAdjacentHTML('beforeend', createCard(data[i], arrSelector[2]));
     }
+
+
 }
 
 let data;
@@ -133,54 +137,61 @@ function moveLeft() {
 
 }
 
-$btnRight.addEventListener('click', moveRight);
-$btnLeft.addEventListener('click', moveLeft);
+if ($btnRight) {
+    $btnRight.addEventListener('click', moveRight);
+}
+if ($btnLeft) {
+    $btnLeft.addEventListener('click', moveLeft);
+}
 
 
-$slider.addEventListener('animationend', function (e) {
-    const leftCards = getContent(document.querySelectorAll(cardsLeft));
-    const centerCards = getContent(document.querySelectorAll(cardsCenter));
-    const rightCards = getContent(document.querySelectorAll(cardsRight));
-    // const copyRight = shuffleArr(rightCards);
-    // const copyLeft = shuffleArr(leftCards);
-    // const copyCenter = shuffleArr(centerCards);
-    if (window.innerWidth > 768) {
-        if (e.animationName === 'move-left') {
+if ($slider) {
+    $slider.addEventListener('animationend', function (e) {
+        const leftCards = getContent(document.querySelectorAll(cardsLeft));
+        const centerCards = getContent(document.querySelectorAll(cardsCenter));
+        const rightCards = getContent(document.querySelectorAll(cardsRight));
+        // const copyRight = shuffleArr(rightCards);
+        // const copyLeft = shuffleArr(leftCards);
+        // const copyCenter = shuffleArr(centerCards);
+        if (window.innerWidth > 768) {
+            if (e.animationName === 'move-left') {
 
-            this.classList.remove(transitionLeft);
-            //снова запускаем обработчик
-            $btnLeft.addEventListener('click', moveLeft);
-            // const copyRight = shuffleArr(rightCards);
-            // const copyLeft = shuffleArr(leftCards);
-            document.querySelectorAll(cardsCenter).forEach((card, i) => {
-                //rewrite center cards
-                card.innerHTML = leftCards[i];
-            });
-            const copyCenter = shuffleArr(centerCards);
-            document.querySelectorAll(cardsLeft).forEach((card, i) => {
-                card.innerHTML = copyCenter[i];
-            });
+                this.classList.remove(transitionLeft);
+                //снова запускаем обработчик
+                $btnLeft.addEventListener('click', moveLeft);
+                // const copyRight = shuffleArr(rightCards);
+                // const copyLeft = shuffleArr(leftCards);
+                document.querySelectorAll(cardsCenter).forEach((card, i) => {
+                    //rewrite center cards
+                    card.innerHTML = leftCards[i];
+                });
+                const copyCenter = shuffleArr(centerCards);
+                document.querySelectorAll(cardsLeft).forEach((card, i) => {
+                    card.innerHTML = copyCenter[i];
+                });
 
-        } else {
-            // const leftCards = getContent(document.querySelectorAll(cardsLeft));
-            // const centerCards = getContent(document.querySelectorAll(cardsCenter));
-            // const rightCards = getContent(document.querySelectorAll(cardsRight));
-            this.classList.remove(transitionRight);
-            $btnRight.addEventListener('click', moveRight);
+            } else {
+                // const leftCards = getContent(document.querySelectorAll(cardsLeft));
+                // const centerCards = getContent(document.querySelectorAll(cardsCenter));
+                // const rightCards = getContent(document.querySelectorAll(cardsRight));
+                this.classList.remove(transitionRight);
+                $btnRight.addEventListener('click', moveRight);
 
-            document.querySelectorAll(cardsCenter).forEach((card, i) => {
-                //rewrite center cards
-                card.innerHTML = rightCards[i];
-            });
-            const copyCenter = shuffleArr(centerCards);
-            document.querySelectorAll(cardsRight).forEach((card, i) => {
-                card.innerHTML = copyCenter[i];
-            });
+                document.querySelectorAll(cardsCenter).forEach((card, i) => {
+                    //rewrite center cards
+                    card.innerHTML = rightCards[i];
+                });
+                const copyCenter = shuffleArr(centerCards);
+                document.querySelectorAll(cardsRight).forEach((card, i) => {
+                    card.innerHTML = copyCenter[i];
+                });
+            }
+            console.log(window.innerWidth);
         }
-        console.log(window.innerWidth);
-    }
 
-});
+    });
+}
+
 
 
 
