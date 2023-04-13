@@ -1,0 +1,46 @@
+.help {
+  background-color: $color-light;
+}
+
+.help__wrapper {
+  padding: 80px 0 100px 0;
+  display: flex;
+  flex-flow: column;
+  gap: 60px;
+  color: $color-dark-1;
+
+  @include media-mobile{
+    padding: 42px 15px;
+    gap: 42px;
+  }
+}
+
+.help__title {
+  text-align: center;
+}
+
+.help__icons {
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 55px 120px;
+  padding: 0 87px;
+  @include media-tablet{
+    gap: 55px 60px;
+    padding: 0 69px;
+    >*{
+      max-width: 170px;
+      flex-basis: 33%;
+    }
+  }
+  @include media-mobile{
+    padding: 0;
+    gap: 30px 30px;
+    justify-content: space-between;
+
+    >*{
+      flex-basis: 45%;
+      max-width: 130px;
+    }
+  }
+}
+

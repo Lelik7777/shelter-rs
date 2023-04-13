@@ -1,0 +1,87 @@
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+
+h1 {
+  @extend %font-f-primary;
+  @include font(3.2rem, 3.5rem);
+  letter-spacing: 0.06em;
+}
+
+h2 {
+  @extend %font-f-primary;
+  @include font(4.4rem, 5.7rem);
+
+  @include media-mobile {
+    @include font(2.5rem, 3.2rem);
+    letter-spacing: 0.06em;
+  }
+}
+
+h3 {
+  @extend %font-f-primary;
+  @include font(3.5rem, 4.5rem);
+  letter-spacing: 0.06em;
+  margin: 0;
+  @include media-mobile {
+    @include font(2.5rem, 3.2rem);
+  }
+}
+
+h4 {
+  @extend %font-f-primary;
+  @include font(2.0rem, 2.3rem);
+  margin: 0;
+  letter-spacing: 0.06em;
+}
+
+h5 {
+  @extend %font-f-primary;
+  @include font(1.5rem, 1.7rem);
+  margin: 0;
+  letter-spacing: 0.06em;
+}
+
+p {
+  @extend %font-f-secondary;
+  @include font();
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: -webkit-calc(100% - 320px);
+  background-color: $color-dark-3xl;
+  opacity: 0.8;
+  @extend %transition;
+
+  &._active {
+    left: 0;
+  }
+}
+

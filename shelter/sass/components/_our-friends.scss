@@ -1,0 +1,51 @@
+.our-friends {
+  background-color: $color-light-1;
+}
+
+.our-friends__wrapper {
+  padding: 80px 0 100px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+
+.our-friends__title {
+  text-align: center;
+  color: $color-dark-1;
+}
+
+.our-friends__slider {
+  display: flex;
+  @include media-mobile {
+    flex-flow: column !important;
+  }
+}
+
+
+.card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 30px;
+  @extend %transition;
+  background-color: $color-light-s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow:0 2px 35px 0 rgba(13, 13, 13, 0.04) ;
+
+    & {
+      background-color: $color-light;
+    }
+
+    button {
+      background-color: $color-primary-light;
+      border-color: $color-primary-light;
+    }
+  }
+}
+
+.card__button {
+  margin-bottom: 30px;
+}
