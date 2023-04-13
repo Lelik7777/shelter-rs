@@ -116,6 +116,11 @@
   position: absolute;
   top: -52px;
   right: -40px;
+  @extend %transition;
+  &:hover{
+    background-color: $color-primary;
+
+  }
   @media(max-width: 600px) {
     right: -35px;
   }
