@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, .button {
 p, .logo__subtitle {
   font-family: Arial, sans-serif; }
 
-.overlay, .button, .icon_round, .header__burger:before, .header__burger:after, .burger__line, .header__navigation, .footer__info, .card, .credit-card, .main .header__logo, .main .navigation__item, .pets .header__logo, .pets .navigation__item {
+.overlay, .button, .icon_round, .header__burger:before, .header__burger:after, .burger__line, .btn_close, .header__navigation, .footer__info, .card, .credit-card, .main .header__logo, .main .navigation__item, .pets .header__logo, .pets .navigation__item {
   transition: all 0.4s ease-out; }
 
 html {
@@ -706,6 +706,8 @@ a {
   position: absolute;
   top: -52px;
   right: -40px; }
+  .btn_close:hover {
+    background-color: #F1CDB3; }
   @media (max-width: 600px) {
     .btn_close {
       right: -35px; } }
