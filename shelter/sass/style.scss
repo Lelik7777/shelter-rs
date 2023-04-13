@@ -1,0 +1,28 @@
+@import "base/normalize";
+
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+@import "base/base";
+@import "base/buttons";
+@import "base/icons";
+@import "base/burger";
+@import "base/modal";
+
+
+@import "layout/header-main";
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/columns";
+@import "layout/footer";
+
+@import "components/navigation";
+@import "components/not-only";
+@import "components/about";
+@import "components/our-friends";
+@import "components/help";
+@import "components/in-addition";
+
+@import "pages/main";
+@import "pages/pets";

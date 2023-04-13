@@ -1,0 +1,159 @@
+.icon {
+  cursor: pointer;
+  display: inline-block;
+
+  &_round {
+    border-radius: 100px;
+    border: 2px solid $color-primary;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %transition;;
+
+    &:hover:not(&.inactive) {
+      background-color: $color-primary-light;
+    }
+
+    &.active {
+      background-color: $color-primary;
+
+    }
+
+    &.inactive {
+      border-color: $color-dark-s;
+      cursor: no-drop;
+
+    }
+
+  }
+}
+
+//webstorm throw errors but this is right way
+.arrow_left {
+  background-image: url("../assets/icons/arrow-left.svg");
+  width: 14px;
+  height: 6px;
+
+}
+
+.arrow_right {
+  background-image: url("../assets/icons/arrow-right.svg");
+  width: 14px;
+  height: 6px;
+}
+
+.greater-then_single {
+  background-image: url("../assets/icons/greater-then-single.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.greater-then_double {
+  background-image: url("../assets/icons/greater-then-double.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.less-then_single {
+  background-image: url("../assets/icons/less-then-single.svg");
+  width: 10px;
+  height: 11px;
+}
+
+.less-then_double {
+  background-image: url("../assets/icons/less-then-double.svg");
+  width: 25px;
+  height: 11px;
+}
+
+.help__icon {
+  display: inline-flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: max-content;
+  gap: 30px;
+  @include media-mobile {
+    gap: 10px;
+    max-width: 130px;
+    & h4 {
+      @include font(1.5rem, 1.7rem);
+    }
+  }
+}
+
+.icon_help {
+  width: 60px;
+  height: 60px;
+  @include media-mobile {
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+  }
+}
+
+//webstorm throw errors but this is right way
+.icon_food {
+  background-image: url("../assets/icons/icon-pet-food.svg");
+}
+
+.icon_transport {
+  background-image: url("../assets/icons/icon-transportation.svg");
+
+}
+
+.icon_toys {
+  background-image: url("../assets/icons/icon-toys.svg");
+}
+
+.icon_bowls {
+  background-image: url("../assets/icons/icon-bowls-and-cups.svg");
+}
+
+.icon_shampoo {
+  background-image: url("../assets/icons/icon-shampoos.svg");
+}
+
+.icon_vitamins {
+  background-image: url("../assets/icons/icon-vitamins.svg");
+}
+
+.icon_medicines {
+  background-image: url("../assets/icons/icon-medicines.svg");
+}
+
+.icon_collars {
+  background-image: url("../assets/icons/icon-collars-leashes.svg");
+}
+
+.icon_sleep {
+  background-image: url("../assets/icons/icon-sleeping-area.svg");
+}
+
+.credit-card__icon {
+  display: inline-block;
+  background-image: url("../assets/icons/credit-card.svg");
+  width: 30px;
+  height: 23px;
+}
+
+.icon_phone {
+  display: inline-block;
+  background-image: url("../assets/icons/phone.svg");
+  width: 40px;
+  height: 32px;
+}
+
+.icon_email {
+  display: inline-block;
+  background-image: url("../assets/icons/icon-email.svg");
+  width: 40px;
+  height: 32px;
+}
+
+.icon_pin {
+  display: inline-block;
+  background-image: url("../assets/icons/pin.svg");
+  width: 22px;
+  height: 32px;
+}

@@ -1,0 +1,51 @@
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-mobile {
+    padding: 0 20px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  flex-flow: column;
+  cursor: pointer;
+}
+
+.logo__title {
+  margin: 0 0 10px;
+}
+
+.logo__subtitle {
+  @extend %font-f-secondary;
+  @include font(1.3rem, 1.495rem);
+  letter-spacing: 0.1em;
+  padding: 0 0 0 4px;
+}
+
+.header__navigation {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 320px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  @extend %transition;
+  z-index: 10;
+
+  &._active{
+    right: 0;
+  }
+  @media(min-width: 768px) {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+}

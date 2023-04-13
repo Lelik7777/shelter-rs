@@ -1,0 +1,43 @@
+
+.navigation {
+  @media (min-width: 768px) {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 36px;
+    flex-flow: row;
+  }
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navigation__item {
+  position: relative;
+
+  &.active-link {
+    &:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: -2px;
+      background-color: $color-primary;
+    }
+  }
+}
+
+.navigation__link {
+  @media (min-width: 768px) {
+    font-family: Arial, sans-serif;
+    @include font();
+    margin: 0;
+    padding: 0;
+  }
+  @include font(3.2rem,5.1rem);
+}

@@ -1,0 +1,49 @@
+{
+  "name": "shelter-rs",
+  "version": "1.0.0",
+  "description": "project rs-school",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch shelter/sass/style.scss:shelter/sass/style.css",
+    "build": "webpack --node-env=production",
+    "dev": "webpack serve",
+    "deploy": "gh-pages -d dist",
+    "clear": "rd /s /q dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lelik7777/shelter-rs.git"
+  },
+  "author": "Lelik7777",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lelik7777/shelter-rs/issues"
+  },
+  "homepage": "https://github.com/Lelik7777/shelter-rs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.2.4",
+    "postcss-preset-env": "^8.0.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "file-loader": "^6.2.0",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2"
+  }
+}
