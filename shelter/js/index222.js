@@ -1,3 +1,5 @@
+import {Modal} from "./Modal";
+
 const $burger = document.querySelector('.header__burger');
 const $burgerLine = document.querySelector('.burger__line');
 const $headerNav = document.querySelector('.header__navigation');
@@ -77,9 +79,13 @@ async function getData() {
 }
 
 window.onload = async function () {
-alert(`привет. Работа еще не закончена. 
+    alert(`привет. Работа еще не закончена. 
 Если есть возможность еще раз проверить позже, 
-то пожалуйста оставь дискорд или телеграм`)
+то пожалуйста оставь дискорд или телеграм`);
+
+//for modal
+   // addCardPetClickHandler();
+
     // fetch('./data/pets.json').then(res => res.json())
     //     .then(res => data = res);
     // console.log(data);
@@ -95,7 +101,7 @@ alert(`привет. Работа еще не закончена.
     const desktopPets = arrPets;
     console.log(arrPets)
     createSlider(arrPets, 9, ['left', 'center', 'right']);
-    console.log('load');
+
 };
 
 
@@ -118,6 +124,22 @@ $navItems.forEach(el => {
         $overlay.classList.toggle(active);
     });
 });
+
+//modal
+if(document.querySelector('.our-friends__slider')){
+    document.querySelector('.our-friends__slider').addEventListener('click',function () {
+        console.log('click');
+    });
+}
+
+const addCardPetClickHandler = () => {
+
+}
+
+function generatePetModal() {
+    let modal = new Modal();
+    modal.build();
+}
 
 
 //slider
