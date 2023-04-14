@@ -1,5 +1,4 @@
 
-
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -65,5 +64,9 @@ a {
   color: inherit;
   text-decoration: none;
   margin: 0;
+}
+
+._block {
+  overflow: hidden;
 }
 

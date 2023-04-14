@@ -1,10 +1,15 @@
 
 .navigation {
+  @include media-min(768px) {
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+    padding: 0;
+    gap: 36px;
+  }
   display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 36px;
-
+  flex-flow: column;
+  gap: 40px;
 }
 
 .navigation__item {
@@ -23,9 +28,14 @@
     }
   }
 }
-.navigation__link{
-  @extend %font-f-secondary;
-  @include font();
-  margin: 0;
-  padding: 0;
+
+.navigation__link {
+  @include media-min(768px){
+    font-family: Arial, sans-serif;
+    @include font();
+    margin: 0;
+    padding: 0;
+  }
+  @include font(3.2rem,5.1rem);
+
 }

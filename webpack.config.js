@@ -3,6 +3,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == 'production';
 
@@ -11,11 +12,12 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 
 
 const config = {
-    entry: './shelter/index.js',
-    devtool: 'source-map',
+    //instead of importing styles in index.js add in entry array
+    entry: ['./shelter/index.js', './shelter/sass/style.scss'],
+    devtool: isProduction ? 'none' : 'source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename:'[name].js',
+        filename: '[name].js',
         assetModuleFilename: 'assets/[name].[ext]'
     },
     devServer: {
@@ -30,6 +32,7 @@ const config = {
             template: './shelter/pets.html',
             filename: 'pets.html'
         }),
+        new CleanWebpackPlugin(),
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ],

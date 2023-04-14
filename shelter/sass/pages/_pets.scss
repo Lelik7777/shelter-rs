@@ -28,7 +28,7 @@
   }
 
   &.header__burger:before, :after, &.burger__line {
-    border-color: $color-dark;
+    background-color: $color-dark;
   }
 
   //for section our-friends

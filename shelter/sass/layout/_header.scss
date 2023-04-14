@@ -27,7 +27,26 @@
 }
 
 .header__navigation {
-  @media(max-width: 767px) {
-    display: none;
+  @include media-min(768px) {
+    position: static;
+    background-color: transparent;
+    width: auto;
+    transform: translateX(0%);
+    transition: none;
+  }
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-dark-3xl;
+  width: 320px;
+  @extend %transition;
+  transform: translateX(100%);
+
+  &._open {
+    transform: translateX(0%);
   }
 }
