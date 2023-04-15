@@ -62,3 +62,10 @@
   }
 }
 
+.overlay_burger {
+  position: fixed;
+  inset: 0;
+  width: -webkit-calc(100% - 320px);
+  background-color: rgba(41, 41, 41, 0.6);
+}
+

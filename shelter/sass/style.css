@@ -582,6 +582,12 @@ a {
     top: 0;
     right: -webkit-calc(50% - 1px); }
 
+.overlay_burger {
+  position: fixed;
+  inset: 0;
+  width: -webkit-calc(100% - 320px);
+  background-color: rgba(41, 41, 41, 0.6); }
+
 .header-main {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%); }
 
